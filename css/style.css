@@ -186,6 +186,11 @@ p {
         margin: 0 0 25px;
     }
 
+
+    .no-bottom p {
+        margin-bottom: 0px;
+    }
+
     .bulleted li {
         font-size: 18px;
     }
