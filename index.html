@@ -26,6 +26,15 @@
             #mc_embed_signup{background:#fff; clear:left; font:16px; font-family: "Arial", "Source Sans", sans-serif; }
             /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block. */
         </style>
+        <style>
+            #mc_embed_signup .button{
+              background:#0d6efd !important;  /* Bootstrap-ish blue */
+              color:#fff !important;
+              border:0; padding:.5rem 1rem; border-radius:.375rem;
+              cursor:pointer;
+            }
+            #mc_embed_signup .button:hover{ filter:brightness(0.9); }
+          </style>
 
         <!-- JS Scripts -->
 		<script src="vendor/jquery/jquery.min.js"></script>
@@ -211,13 +220,13 @@
                 </div>
                 <br>
             </div>
-            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+            <!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
 
-            <script type="text/javascript">
+            <!-- <script type="text/javascript">
 $(".signup").on('click', function () {
                     require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"0fcd39a2378c6fb9bde0d515d","lid":"81a2ee6a68"}) })
                 });
-            </script>
+            </script> -->
         </footer>
 
     </body>
