@@ -26,15 +26,6 @@
             #mc_embed_signup{background:#fff; clear:left; font:16px; font-family: "Arial", "Source Sans", sans-serif; }
             /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block. */
         </style>
-        <style>
-            #mc_embed_signup .button{
-              background:#0d6efd !important;  /* Bootstrap-ish blue */
-              color:#fff !important;
-              border:0; padding:.5rem 1rem; border-radius:.375rem;
-              cursor:pointer;
-            }
-            #mc_embed_signup .button:hover{ filter:brightness(0.9); }
-          </style>
 
         <!-- JS Scripts -->
 		<script src="vendor/jquery/jquery.min.js"></script>
@@ -115,9 +106,14 @@
         <section class="content-section">
             <div class="container">
                 <div class="row">
-                    <div class="card help col-md-6 col-sm-12 mx-auto">
+                    <div class="card help col-md-6 col-sm-12 mx-auto vertical-center-card">
+                        <div>
+                            <a href="http://eepurl.com/glGi61" target="_blank" rel="noopener noreferrer" class="btn btn-navbar-blue btn-lg">
+                                Join the BNHCA mailing list
+                            </a>
+                        </div>
                         <!-- Begin MailChimp Signup Form -->
-                        <div id="mc_embed_signup">
+                        <!-- <div id="mc_embed_signup">
                             <form action="https://bnhca.us20.list-manage.com/subscribe/post?u=580a4c65e3febdd9c7e052e3e&amp;id=276fc9b9a0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                 <div id="mc_embed_signup_scroll">
                                     <h2 style="margin:0px">Join us</h2>
@@ -162,13 +158,13 @@
                                     <div id="mce-responses" class="clear">
                                         <div class="response" id="mce-error-response" style="display:none"></div>
                                         <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_580a4c65e3febdd9c7e052e3e_276fc9b9a0" tabindex="-1" value=""></div>
+                                    </div>    real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_580a4c65e3febdd9c7e052e3e_276fc9b9a0" tabindex="-1" value=""></div>
                                     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                                     <text style="font-size:14px;"><i>You will receive an email confirmation once you are subscribed. If you do not receive a confirmation, please try a non-Firefox browser, or contact us: <a href="mailto:info@bnhca.org">info@bnhca.org</a></i></text>
                                 </div>
                             </form>
-                        </div>
+                        </div> --> 
                         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
                         <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[3]='DISTRICT';ftypes[3]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
                         <!--End mc_embed_signup-->
@@ -220,13 +216,13 @@
                 </div>
                 <br>
             </div>
-            <!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
+            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
-            <!-- <script type="text/javascript">
+            <script type="text/javascript">
 $(".signup").on('click', function () {
                     require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"0fcd39a2378c6fb9bde0d515d","lid":"81a2ee6a68"}) })
                 });
-            </script> -->
+            </script>
         </footer>
 
     </body>

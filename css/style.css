@@ -420,3 +420,23 @@ a:focus, a:hover {
     left:0px;
     top:-40px;
 }
+
+.btn-navbar-blue {
+    background-color: #3fa9f5 !important;
+    border-color: #3fa9f5 !important;
+    color: white !important;
+}
+.btn-navbar-blue:hover, .btn-navbar-blue:focus {
+    background-color: #2d8fd6 !important;
+    border-color: #2d8fd6 !important;
+    color: white !important;
+}
+
+.vertical-center-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    height: 100%;
+}
