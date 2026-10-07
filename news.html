@@ -2,42 +2,41 @@
 
 <html lang="en">
 	<head>
-		<title>Berkeley Neighbors for Housing and Climate Action</title>
-		<meta name="description" content="">
+		<title>News &amp; Updates | Berkeley Neighbors for Housing and Climate Action</title>
+		<meta name="description" content="Read BNHCA newsletters, published letters, and opinion pieces about housing and climate action in Berkeley.">
 		<meta name="keywords" content="">
 		<meta name="author" content="Ben Gould">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom fonts -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
         <!-- Custom CSS for this site -->
         <link href="css/style.css" rel="stylesheet">
 
 
         <!-- JS Scripts -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+		<script defer src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script defer src="js/main.js"></script>
+        <script defer src="js/news.js"></script>
 
 	</head>
 	<body id="top">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
         <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" aria-label="Main navigation">
             <div class="container">
-                <text style="font-weight:700">Berkeley Neighbors for Housing and Climate Action</text>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTarget" aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="site-name" style="font-weight:700">Berkeley Neighbors for Housing and Climate Action</span>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTarget" aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTarget">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="index.html#top">Home</a>
                         </li>
@@ -49,10 +48,10 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="/endorsements.html">Endorsements</a>
+                            <a class="nav-link js-scroll-trigger" href="endorsements.html">Endorsements</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger btn btn-primary" role="button" href="/index.html#join" style="color:white">Join Us</a>
+                            <a class="nav-link js-scroll-trigger btn btn-primary" href="index.html#join" style="color:white">Join Us</a>
                         </li>
                     </ul>
                 </div>
@@ -60,6 +59,7 @@
         </nav>
 
 
+        <main id="main-content" tabindex="-1">
         <!-- Banner/Masthead -->
         <!-- Intro Header -->
         <header class="masthead" style="display:none">
@@ -71,8 +71,8 @@
                         </div>
                         <div class="col-lg-7 mx-auto masthead-box">
                             <div style="margin-left: 40px;">
-                                <h4 class="brand-heading text-center" style="font-size: 42px;margin-right:40px;margin-top: 20px;">BERKELEY NEIGHBORS <i>for</i> HOUSING AND CLIMATE</h4>
-                                <h5 class="brand-heading text-center" style="font-size: 56px;margin-right:40px; margin-bottom: 20px;">ACTION</h5>
+                                <div class="brand-heading text-center" style="font-size: 42px;margin-right:40px;margin-top: 20px;">BERKELEY NEIGHBORS <i>for</i> HOUSING AND CLIMATE</div>
+                                <div class="brand-heading text-center" style="font-size: 56px;margin-right:40px; margin-bottom: 20px;">ACTION</div>
                             </div>
                         </div>
                     </div>
@@ -82,25 +82,33 @@
 
         <!-- About Section -->
         <section id="about" class="content-section">
+            <div class="container"><h1>News &amp; Updates</h1></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-10 mx-auto">
                         <h2 style="margin-bottom:20px">RESOURCES</h2>
-                            <p>Find all our published letters and op-eds <a href="https://drive.google.com/drive/folders/1KqRRUlhDnfWt_yBj3TXi1gc18dxRh-S6?usp=sharing">by clicking here</a></p>
+                            <p>Find our <a href="https://drive.google.com/drive/folders/1KqRRUlhDnfWt_yBj3TXi1gc18dxRh-S6?usp=sharing">published letters and opinion pieces</a>.</p>
 
                         <h2 style="margin-bottom:20px">NEWSLETTERS</h2>
-                        <p style="margin-bottom:0px">Full archive available here:</p>
-                        <iframe src="https://us20.campaign-archive.com/home/?u=580a4c65e3febdd9c7e052e3e&id=276fc9b9a0" width="100%" height="800px"></iframe>
+                        <p>Browse our newsletters below, or <a href="https://us20.campaign-archive.com/home/?u=580a4c65e3febdd9c7e052e3e&amp;id=276fc9b9a0" target="_blank" rel="noopener noreferrer">open the newsletter archive in a new tab</a>.</p>
+                        <div class="newsletter-archive" id="newsletter-archive">
+                            <div class="newsletter-loading" role="status" hidden>
+                                <span class="newsletter-spinner" aria-hidden="true"></span>
+                                <span>Loading the newsletter archive…</span>
+                            </div>
+                            <template id="newsletter-frame">
+                                <iframe title="BNHCA newsletter archive" src="https://us20.campaign-archive.com/home/?u=580a4c65e3febdd9c7e052e3e&amp;id=276fc9b9a0" width="100%" height="800"></iframe>
+                            </template>
+                        </div>
+                        <noscript><p>Use the archive link above to read our newsletters.</p></noscript>
 
 
-                    </div>
-                    <div class="col-lg-4 mx-auto">
-                        <h2 style="margin-bottom:20px">BNHCA on Twitter</h2>
-                        <a class="twitter-timeline" data-height="650" href="https://twitter.com/bnhca?ref_src=twsrc%5Etfw">Tweets by bnhca</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
             </div>
         </section>
+
+        </main>
 
         <!-- Footer -->
         <footer>
@@ -110,23 +118,16 @@
                     <div class="col-6 no-bottom">
                         <p><a href="mailto:info@bnhca.org">info@bnhca.org</a></p>
                         <p>Connect on social media:</p>
-                        <a href="https://www.facebook.com/bnhca"><i class="icon-small fab fa-facebook"></i></a>
-                        <a href="https://www.twitter.com/bnhca"><i class="icon-small fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/bnhca" aria-label="BNHCA on Facebook"><i class="icon-small fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.twitter.com/bnhca" aria-label="BNHCA on Twitter"><i class="icon-small fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-6 no-bottom">
-                        <p>Copyright &copy; 2018, All rights reserved</p>
+                        <p>Copyright &copy; 2026, All rights reserved</p>
                         <p>Designed and built by Berkeley Neighbors for Housing and Climate Action</p>
                     </div>
                 </div>
                 <br>
             </div>
-            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
-            <script type="text/javascript">
-$(".signup").on('click', function () {
-                    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"0fcd39a2378c6fb9bde0d515d","lid":"81a2ee6a68"}) })
-                });
-            </script>
         </footer>
 
     </body>

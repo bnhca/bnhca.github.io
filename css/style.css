@@ -1,16 +1,10 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:900,700,500,400,300");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Source-Sans");
-@import url("https://fonts.googleapis.com/css?family=Open-Sans: 300,400,600");
-@import url("https://fonts.googleapis.com/css?family=Arial: 300,400,600");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 /* Custom CSS */
 
 body, header, footer {
-    font-family: "Arial", "Source Sans", sans-serif;
+    font-family: "Arial", Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -80,7 +74,7 @@ body, header, footer {
 
 .card-body a:hover {
     text-decoration: underline;
-    color: #3fa9f5;
+    color: #004f84;
 }
 
 .card-body {
@@ -128,7 +122,7 @@ footer {
 }
 
 .d4 {
-    color: #3fa9f5;
+    color: #004f84;
 }
 
 .endorsements p {
@@ -145,7 +139,7 @@ footer {
 
 /* Supplemental from Grayscale.css */
 body {
-    font-family: "Roboto", "Source Sans", sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     position: relative;
     width: 100%;
     height: 100%;
@@ -163,7 +157,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Nunito", "Roboto", "Source Sans", sans-serif;
+    font-family: "Nunito", "Roboto", Arial, sans-serif;
     font-weight: 700;
     margin: 0 0 25px;
     letter-spacing: 1px;
@@ -197,10 +191,10 @@ p {
 }
 
 a {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    color: #3fa9f5;
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    color: #004f84;
     text-decoration: underline;
 }
 
@@ -219,7 +213,7 @@ a:focus, a:hover {
 
 /* Main Nav items from Grayscale.css */
 #mainNav {
-    font-family: "Roboto", "Source Sans", sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 18px;
@@ -267,13 +261,11 @@ a:focus, a:hover {
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-    color: fade(white, 80%);
-    outline: none;
+    color: #004f84;
     background-color: transparent;
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-    outline: none;
     background-color: transparent;
 }
 
@@ -314,7 +306,6 @@ a:focus, a:hover {
     background: white;
     }
     #mainNav .nav-link.active {
-    outline: none;
     background-color: rgba(255, 255, 255, 0.3);
     }
     #mainNav .nav-link.active:hover {
@@ -440,3 +431,38 @@ a:focus, a:hover {
     min-height: 100px;
     height: 100%;
 }
+
+/* Keyboard navigation and responsive layout. */
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 110px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #004f84; outline-offset: 4px; }
+.skip-link { position: fixed; top: 8px; left: 8px; z-index: 1100; padding: 12px; background: white; color: #004f84; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+.site-name { flex: 1; min-width: 0; }
+#mainNav .container { gap: 10px; }
+#mainNav img { flex-shrink: 0; }
+#mainNav .btn-primary, .btn-navbar-blue { background-color: #004f84 !important; border-color: #004f84 !important; color: white !important; }
+#mainNav .navbar-nav { flex-shrink: 0; }
+@media (max-width: 991.98px) {
+    #mainNav .site-name { font-size: 15px; line-height: 1.2; }
+    #mainNav img { max-height: 40px !important; margin-right: 0 !important; }
+    #mainNav .navbar-collapse { flex-basis: 100%; }
+    #mainNav .navbar-toggler { font-size: 15px; padding: 8px; }
+    .banner-section .brand-heading { font-size: clamp(24px, 6vw, 42px) !important; overflow-wrap: anywhere; }
+    footer .row > div { width: 100%; margin-bottom: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
+}
+
+/* Newsletter frame loading and slow-service fallback. */
+.newsletter-archive { position: relative; }
+.newsletter-archive iframe { display: block; width: 100%; height: 800px; border: 0; }
+.newsletter-archive.is-loading iframe { visibility: hidden; }
+.newsletter-loading { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; text-align: center; background: #f5f7f9; color: #004f84; }
+.newsletter-loading[hidden] { display: none; }
+.newsletter-archive.is-slow .newsletter-loading { position: static; margin-bottom: 16px; }
+.newsletter-spinner { width: 36px; height: 36px; border: 4px solid #ccd9e3; border-top-color: #004f84; border-radius: 50%; animation: newsletter-spin 1s linear infinite; }
+@keyframes newsletter-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .newsletter-spinner { animation: none; } }
